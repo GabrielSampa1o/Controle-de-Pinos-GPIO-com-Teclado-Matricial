@@ -15,7 +15,7 @@
       "id": "r1",
       "top": 157.55,
       "left": 38.4,
-      "attrs": { "value": "220000" }
+      "attrs": { "value": "220" }
     },
     {
       "type": "wokwi-led",
@@ -29,6 +29,13 @@
       "id": "keypad1",
       "top": -184.4,
       "left": -349.6,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer1",
+      "top": 200,
+      "left": 250,
       "attrs": {}
     }
   ],
@@ -45,7 +52,9 @@
     [ "pico:GP5", "keypad1:R4", "green", [ "h-268.8", "v96", "h-144" ] ],
     [ "pico:GP6", "keypad1:R3", "green", [ "h-268.8", "v76.8", "h-153.6", "v-19.2" ] ],
     [ "pico:GP7", "keypad1:R2", "green", [ "h-268.8", "v67.2", "h-163.2" ] ],
-    [ "pico:GP8", "keypad1:R1", "green", [ "h-268.8", "v57.6", "h-172.8" ] ]
+    [ "pico:GP8", "keypad1:R1", "green", [ "h-268.8", "v57.6", "h-172.8" ] ],
+    [ "pico:GP14", "buzzer1:1", "red", [ "h40" ] ],
+    [ "buzzer1:2", "pico:GND.3", "black", [ "v10" ] ]
   ],
   "dependencies": {}
 }
