@@ -119,6 +119,12 @@ int main()
                 gpio_put(BUZZER, 0); // Desliga o buzzer
                 printf("Buzzer desativado\n");
             }
+            else if (tecla == '#') {
+                gpio_put(LED_VERDE, 1); // Liga o LED verde
+                gpio_put(LED_AZUL, 1); // Liga o LED azul
+                gpio_put(LED_VERMELHO, 1); // Liga o LED vermelho
+                printf("Todos os leds ligados\n");
+            }
         }
 
         sleep_ms(100);
