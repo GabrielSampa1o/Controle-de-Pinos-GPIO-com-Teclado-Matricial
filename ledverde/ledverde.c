@@ -3,7 +3,8 @@
 
 #define LED_VERDE 11
 #define LED_AZUL 12
-#define BUZZER 14 // Definição do pino do buzzer
+#define LED_VERMELHO 13 // Definição do pino do LED vermelho
+#define BUZZER 14       // Definição do pino do buzzer
 
 // Mapa de teclas
 char KEY_MAP[16] = {
@@ -75,6 +76,8 @@ int main()
     gpio_set_dir(LED_VERDE, GPIO_OUT);
     gpio_init(LED_AZUL);
     gpio_set_dir(LED_AZUL, GPIO_OUT);
+    gpio_init(LED_VERMELHO);
+    gpio_set_dir(LED_VERMELHO, GPIO_OUT);
     gpio_init(BUZZER);
     gpio_set_dir(BUZZER, GPIO_OUT);
 
@@ -85,9 +88,10 @@ int main()
     while (true)
     {
         // Detecta a tecla pressionada
-        gpio_put(LED_VERDE, 0); // Mantém o LED verde desligado
-        gpio_put(LED_AZUL, 0);  // Mantém o LED azul desligado
-        gpio_put(BUZZER, 0);    // Mantém o buzzer desligado
+        gpio_put(LED_VERDE, 0);       // Mantém o LED verde desligado
+        gpio_put(LED_AZUL, 0);        // Mantém o LED azul desligado
+        gpio_put(LED_VERMELHO, 0);    // Mantém o LED vermelho desligado
+        gpio_put(BUZZER, 0);          // Mantém o buzzer desligado
         tecla = detectar_tecla();
         if (tecla != '\0')
         {
@@ -101,6 +105,11 @@ int main()
             {
                 gpio_put(LED_AZUL, 1); // Liga o LED azul
                 printf("LED azul ligado\n");
+            }
+            else if (tecla == 'C')
+            {
+                gpio_put(LED_VERMELHO, 1); // Liga o LED vermelho
+                printf("LED vermelho ligado\n");
             }
             else if (tecla == 'D')
             {
