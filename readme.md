@@ -87,7 +87,7 @@ Sinta-se à vontade para abrir issues ou pull requests no repositório: [GitHub 
 - Gabriel Silva Sampaio
 - Maic de Oliveira Santos
 - Kaique Almeida Barbosa
-- [Nome do desenvolvedor]
+- Humberto Bandeira Costa
 - [Nome do desenvolvedor]
 - [Nome do desenvolvedor]
 
