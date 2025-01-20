@@ -90,3 +90,9 @@ Sinta-se à vontade para abrir issues ou pull requests no repositório: [GitHub 
 - [Nome do desenvolvedor]
 - [Nome do desenvolvedor]
 - [Nome do desenvolvedor]
+
+## Vídeo de Demonstração
+
+[Assista ao vídeo de demonstração aqui](https://www.dropbox.com/scl/fi/z0v2e9is15czq3508h7c4/2025-01-19-20-21-49.mkv?rlkey=xszp4lvgrpryekcvdroszjmjj&st=326dgohf&dl=0)
+
+
